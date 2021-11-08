@@ -3,7 +3,7 @@ import pathlib
 
 import pytest
 
-from src.request import Request
+from app.request import Request
 
 
 @pytest.fixture(params=[("api_gateway_proxy_event.json")])

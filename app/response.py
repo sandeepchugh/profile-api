@@ -10,7 +10,7 @@ class Preference(BaseModel):
 
 
 class Profile(BaseModel):
-    customer_id: UUID = Field(default_factory=uuid.uuid4)
+    customer_id: str = Field(default_factory=uuid.uuid4)
     first_name: str
     last_name: str
     preferences: List[Preference] = Field(default_factory=list)
